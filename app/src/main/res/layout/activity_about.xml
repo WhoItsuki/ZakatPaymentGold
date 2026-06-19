@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#BDE8F5"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- App Title / Logo Placeholder -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gold Zakat Estimator"
+        android:textColor="#0F2854"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Developer Details (Required by Assignment) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developer Details"
+        android:textColor="#1C4D8D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: MUHAMMAD SYAFIQ IKHWAN BIN DIN\nStudent ID: 2026179869\nGroup: CS240/5B"
+        android:textColor="#0F2854"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Application Info -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Application Info"
+        android:textColor="#1C4D8D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0\nBuilt using Android Studio &amp; Java.\nDesigned for estimating gold zakat contributions easily."
+        android:textColor="#0F2854"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Clickable URL (Required by Assignment) -->
+    <TextView
+        android:id="@+id/tvGithubLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt;a href='https://github.com/yourusername/your-repo'&gt;Visit Project GitHub Repository&lt;/a&gt;"
+        android:textSize="16sp"
+        android:textColorLink="#4988C4"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Copyright Statement (Required by Assignment) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2026 Your Name. All Rights Reserved."
+        android:textColor="#0F2854"
+        android:textSize="12sp"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>

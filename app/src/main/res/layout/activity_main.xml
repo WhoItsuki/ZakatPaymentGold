@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDE8F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1C4D8D"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:title="Gold Zakat Estimator"
+            app:titleTextColor="#FFFFFF" />
+        <!-- Instruction Notice (Good Design Practice) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gold Zakat Calculator\n(Keep threshold: 85g | Wear threshold: 200g)"
+            android:textColor="#0F2854"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Input 1: Gold Weight -->
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Gold Weight (grams)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Input 2: Gold Value -->
+        <EditText
+            android:id="@+id/etGoldValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Gold Value per gram (RM)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Input 3: Type of Gold -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type of Gold:"
+            android:textColor="#0F2854"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgGoldType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <RadioButton
+                android:id="@+id/rbKeep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keep"
+                android:layout_marginRight="20dp"/>
+            <RadioButton
+                android:id="@+id/rbWear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wear"/>
+        </RadioGroup>
+
+        <!-- Buttons -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Zakat"
+            android:backgroundTint="#4988C4"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset Fields"
+            android:backgroundTint="#1C4D8D"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Outputs -->
+        <TextView
+            android:id="@+id/tvTotalValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Gold Value: RM 0.00"
+            android:textColor="#0F2854"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvPayableValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zakat Payable Value: RM 0.00"
+            android:textColor="#0F2854"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvTotalZakat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Zakat: RM 0.00"
+            android:textColor="#0F2854"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:id="@+id/btnToAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Developer"
+            android:backgroundTint="#0F2854"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+</ScrollView>
